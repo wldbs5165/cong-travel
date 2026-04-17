@@ -1,0 +1,144 @@
+/* Design Token */
+:root {
+  /* Reference Token */
+  /* Colors */
+  /* Primary Purple */
+  --purple-100: #f9f9fe;
+  --purple-200: #cfcafa;
+  --purple-300: #a69bf6;
+  --purple-400: #7c6cf2;
+  --purple-500: #523dee;
+  --purple-600: #2d14e4;
+  --purple-700: #2410b5;
+  --purple-800: #1a0c86;
+  --purple-900: #110857;
+
+  /* Gray */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-400: #6e747e;
+  --gray-600: #4b5563;
+  --gray-900: #111827;
+
+  /* Sementic */
+  --success-default: #22c55e;
+  --success-bg: #ecfdf5;
+  --success-text: #166534;
+  --error-default: #ef4444;
+  --error-bg: #fef2f2;
+  --error-text: #991b1b;
+  --warning-default: #f59e0b;
+  --warning-bg: #fffbeb;
+  --warning-text: #92400e;
+  --info-default: #3b82f6;
+  --info-bg: #eff6ff;
+  --info-text: #1e3a8a;
+
+  /* Spacing */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+
+  /* Font Size */
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 18px;
+  --font-xl: 20px;
+  --font-2xl: 22px;
+  --font-3xl: 24px;
+  --font-4xl: 28px;
+  --font-5xl: 36px;
+  --font-6xl: 48px;
+
+  /* System Token */
+  /* Background */
+  --color-bg-primary: var(--gray-50);
+  --color-bg-inverse: var(--gray-900);
+
+  /* Text */
+  --color-text-primary: var(--gray-900);
+  --color-text-inverse: var(--gray-50);
+
+  /* Accent */
+  --accent-primary-default: #f97316;
+  --accent-primary-soft: #fff7ed;
+  --accent-primary-text: #9a3412;
+  --accent-purple-soft: #f1f0ff;
+  --accent-purple-text: #5b4fe0;
+}
+
+/* css 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+}
+body {
+  overflow-x: hidden;
+  background-color: var(--color-bg-primary);
+  font-size: var(--font-md);
+  color: var(--color-text-primary);
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/* Component Token */
+/* Layout */
+.layout-sm {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  max-width: 767px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 var(--spacing-16);
+}
+.layout-md {
+  position: relative;
+  width: 100%;
+  min-width: 768px;
+  max-width: 1023px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 var(--spacing-24);
+}
+.layout-lg {
+  position: relative;
+  width: 100%;
+  min-width: 1024px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.outlet {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  background-color: #d4d4d4;
+}
