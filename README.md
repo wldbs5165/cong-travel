@@ -3,3 +3,5 @@
 - [노션에서 보기](https://invented-century-90e.notion.site/UX-UI-32da63eb0968803e870de3593c68a29c?source=copy_link)
 
 - <a href = "https://invented-century-90e.notion.site/UX-UI-32da63eb0968803e870de3593c68a29c?source=copy_link" target="_blank">노션에서 보기 </a>
+
+- git hub 다른 pc 연습
