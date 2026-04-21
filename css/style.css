@@ -229,7 +229,7 @@ a.btn {
 }
 
 /* -----Input----- */
-input {
+input:not([type="radio"]):not([type="checkbox"]) {
   appearance: none;
   -webkit-appearance: none;
   width: 100%;
@@ -246,11 +246,36 @@ input {
   line-height: inherit;
   letter-spacing: inherit;
 }
-input:focus-visible {
-  outline: 2px solid var(--color-bg-inverse);
-  outline-offset: 2px;
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--gray-300);
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+
+  display: inline-grid;
+  place-content: center;
 }
-.input-field {
+
+input[type="radio"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.15s ease;
+  background: var(--green-700);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+.input-field,
+.input-field-sign {
   position: relative;
   width: 100%;
 }
@@ -259,6 +284,13 @@ input:focus-visible {
   height: 16px;
   width: 16px;
   top: 12px;
+  left: 12px;
+}
+.input-field-sign img {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 48px;
   left: 12px;
 }
 
@@ -270,6 +302,9 @@ input:focus-visible {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-20);
   }
+  .onboarding-title br {
+    display: none;
+  }
 }
 @media screen and (min-width: 1024px) {
   .layout {
@@ -278,6 +313,9 @@ input:focus-visible {
   .card-container {
     grid-template-columns: repeat(4, 1fr);
     gap: var(--spacing-24);
+  }
+  .onboarding-title br {
+    display: none;
   }
 }
 
@@ -426,11 +464,127 @@ input:focus-visible {
   width: 100%;
   gap: var(--spacing-16);
 }
-.input-field input {
-  padding: var(--spacing-8) var(--spacing-8);
-}
 .input-field h3 {
 }
 .btn-primary {
   background-color: var(--green-700);
+}
+
+/* ----------OnboardingPage---------- */
+.onboarding-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding-top: 84px;
+}
+.onboarding-section .header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.onboarding-section .header .random-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--spacing-4);
+}
+.onboarding-section .header .random-btn img {
+  width: 24px;
+  height: 24px;
+}
+.onboarding-section .header .random-btn .random-text {
+  font-weight: 600;
+  color: var(--green-700);
+}
+.onboarding-section .header .next {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.onboarding-section .header .next .next-text {
+}
+.onboarding-section .header .next img {
+  width: 20px;
+  height: 20px;
+}
+.onboarding-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: var(--spacing-64);
+  padding-top: var(--spacing-64);
+}
+.onboarding-main img {
+  width: 306px;
+  height: 345px;
+}
+.onboarding-main .onboarding-title {
+  text-align: center;
+  font-size: var(--font-lg);
+  font-weight: 600;
+}
+/* ----------OnboardingQuestionPage---------- */
+.onboarding-question {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 84px;
+}
+.question-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: var(--spacing-64);
+  gap: var(--spacing-64);
+}
+.question-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: var(--spacing-8);
+}
+.question-step img {
+  height: 8px;
+}
+.question-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  gap: var(--spacing-24);
+}
+.question-title {
+  font-size: var(--font-2lg);
+  font-weight: 700;
+}
+.choice-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-8);
+}
+.choice-item {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: var(--spacing-8) var(--spacing-16);
+  gap: var(--spacing-16);
+}
+.choice-item input {
+  width: 20px;
+  height: 20px;
+}
+.choice-item span {
 }
