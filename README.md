@@ -8,3 +8,12 @@
 - git merge origin/main
 - git branch 작업명(work-practice-260422)
 - git switch 작업명(work-practice-260422)
+
+<!-- 이후 git add . -->
+
+- git add .
+- git commit -m "작업내용"
+- git push origin 해당 브랜치
+
+- git switch main
+- git fetch
