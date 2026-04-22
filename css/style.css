@@ -293,7 +293,26 @@ input[type="radio"]:checked::before {
   top: 48px;
   left: 12px;
 }
-
+/* -----Card----- */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  gap: var(--spacing-8);
+  padding: var(--spacing-8);
+}
+.card-name {
+}
+.card-title img {
+}
+.card-location {
+}
+.card-sub {
+}
+.card-tag {
+}
 @media screen and (min-width: 768px) {
   .layout {
     padding: 0 var(--layout-padding-md);
@@ -587,4 +606,19 @@ input[type="radio"]:checked::before {
   height: 20px;
 }
 .choice-item span {
+}
+.step-btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.question-prev-btn {
+  color: var(--green-700);
+}
+.question-next-btn {
+  color: var(--green-700);
+}
+.question-next-btn:disabled {
+  color: var(--gray-400);
+  cursor: not-allowed;
 }
