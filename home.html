@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자 성향 기반 여행 추천 서비스 애플리케이션 프로젝트 - 홈</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="full-layout">
+      <div class="full-header-section">
+        <div class="logo">
+          <img src="assets/icons/logo2.png" alt="홈 로고" />
+        </div>
+        <nav class="quick-tab">
+          <a href="#">
+            <span class="caption">랜덤 추천</span>
+          </a>
+          <a href="#">
+            <span class="caption">조건 검색</span>
+          </a>
+          <a href="#">
+            <span class="caption">이상형 월드컵</span>
+          </a>
+          <a href="#">
+            <span class="caption">인기 여행</span>
+          </a>
+        </nav>
+      </div>
+      <div class="section">
+        <div class="section-title">
+          <h3 class="heading-3">최근 추천 여행지</h3>
+        </div>
+        <div class="card-slider">
+          <div class="card-viewport">
+            <div class="card-container" data-type="recent"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">
+          <h3 class="heading-3">인기 여행지</h3>
+        </div>
+        <div class="card-slider">
+          <div class="card-viewport">
+            <div class="card-container" data-type="popular"></div>
+          </div>
+        </div>
+      </div>
+      <nav class="tap-bar">
+        <a href="#" class="menu">
+          <img src="assets/icons/menu.png" alt="메뉴 버튼" />
+          <span>더보기</span>
+        </a>
+        <a href="#" class="search">
+          <img src="assets/icons/search.png" alt="검색 버튼" />
+          <span>검색</span>
+        </a>
+        <a href="#" class="home">
+          <img src="assets/icons/house.png" alt="홈 버튼" />
+          <span>홈</span>
+        </a>
+        <a href="#" class="save">
+          <img src="assets/icons/bookmark-white.png" alt="북마크 버튼" />
+          <span>저장</span>
+        </a>
+        <a href="#" class="user">
+          <img src="assets/icons/user.png" alt="사용자 버튼" />
+          <span>내 정보</span>
+        </a>
+      </nav>
+    </div>
+    <script type="module" src="./js/module/slider.js"></script>
+  </body>
+</html>

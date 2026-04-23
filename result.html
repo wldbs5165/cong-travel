@@ -14,46 +14,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
   </head>
   <body>
     <div class="layout">
       <div class="container">
+        <div class="logo">
+          <img src="assets/icons/logo2.png" alt="홈 로고" />
+        </div>
         <div class="result-section">
-          <div class="logo">
-            <img src="assets/icons/logo2.png" alt="홈 로고" />
-          </div>
           <div class="result">
-            <div class="title">
+            <div class="user-choice">
               <div class="main-title">
-                <h2 class="heading-2 user-choice">휴양,가족,3~5월</h2>
-                <span>휴양,가족,3~5월</span>
+                <h2 class="heading-2">휴양,가족,3~5월</h2>
+                <span>을 선택하신</span>
               </div>
               <span class="sub-title"
                 >사용자 님에게 가장 잘 맞는 여행지에요!</span
               >
             </div>
-            <div class="card">
-              <div class="card-img">
-                <img
-                  src="assets/images/타이베이-상세.png"
-                  alt="타이베이 이미지"
-                />
-              </div>
-              <div class="card-name">
-                <img src="assets/icons/map-pin.png" alt="위치 아이콘" />
-                <h3 card-location>타이베이(대만)</h3>
-              </div>
-              <span class="card-sub">""다양한 먹거리와 편리한 대중교통""</span>
-              <div class="card-tag">
-                <span>@ 먹방</span>
-                <span>@ 야시장</span>
-                <span>@ 대중교통</span>
-              </div>
-            </div>
+            <div class="card-container"></div>
           </div>
         </div>
       </div>
     </div>
+    <nav class="tap-bar">
+      <a href="#" class="menu">
+        <img src="assets/icons/menu.png" alt="메뉴 버튼" />
+        <span>더보기</span>
+      </a>
+      <a href="#" class="search">
+        <img src="assets/icons/search.png" alt="검색 버튼" />
+        <span>검색</span>
+      </a>
+      <a href="#" class="home">
+        <img src="assets/icons/house.png" alt="홈 버튼" />
+        <span>홈</span>
+      </a>
+      <a href="#" class="save">
+        <img src="assets/icons/bookmark-white.png" alt="북마크 버튼" />
+        <span>저장</span>
+      </a>
+      <a href="#" class="user">
+        <img src="assets/icons/user.png" alt="사용자 버튼" />
+        <span>내 정보</span>
+      </a>
+    </nav>
   </body>
+  <script type="module" src="./js/module/card.js"></script>
 </html>
