@@ -54,7 +54,7 @@ function bindChoiceEvent() {
       if (current === questions.length - 1) {
         setTimeout(() => {
           alert("결과를 보시겠어요?");
-          // window.location.href = "result.html";
+          window.location.href = "result.html";
         }, 300);
         return;
       }
