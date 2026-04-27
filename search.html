@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      사용자 성향 기반 여행 추천 서비스 애플리케이션 프로젝트 - 검색
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="container">
+        <div class="search-section">
+          <div class="header search-header">
+            <a class="prev" href="#">
+              <img src="assets/icons/perv.png" alt="홈으로 돌아가기 버튼" />
+            </a>
+            <div class="input-field search">
+              <img src="assets/icons/search-bar.png" alt="검색 아이콘" />
+              <input
+                class="input-search"
+                type="text"
+                placeholder="검색어 입력"
+              />
+            </div>
+            <button class="delete-btn">
+              <span>취소</span>
+            </button>
+          </div>
+          <div class="keyword-section">
+            <h3>최근 검색어</h3>
+            <div class="search-list">
+              <div class="search-tag">
+                <span class="caption">홍콩</span>
+                <img src="assets/icons/x.png" alt="삭제 아이콘" />
+              </div>
+              <div class="search-tag">
+                <span class="caption">야마나시현</span>
+                <img src="assets/icons/x.png" alt="삭제 아이콘" />
+              </div>
+              <div class="search-tag">
+                <span class="caption">푸켓</span>
+                <img src="assets/icons/x.png" alt="삭제 아이콘" />
+              </div>
+            </div>
+          </div>
+          <div class="keyword-section">
+            <h3>추천 검색어</h3>
+            <div class="search-list">
+              <div class="search-tag">
+                <span class="caption">홍콩</span>
+              </div>
+              <div class="search-tag">
+                <span class="caption">야마나시현</span>
+              </div>
+              <div class="result-tag">
+                <span class="caption">푸켓</span>
+              </div>
+            </div>
+          </div>
+          <div class="keyword-section">
+            <h3>인기 검색어</h3>
+            <div class="search-list">
+              <div class="search-tag">
+                <span class="caption">홍콩</span>
+              </div>
+              <div class="search-tag">
+                <span class="caption">야마나시현</span>
+              </div>
+              <div class="search-tag">
+                <span class="caption">푸켓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="tap-bar">
+      <a href="#" class="menu">
+        <img src="assets/icons/menu.png" alt="메뉴 버튼" />
+        <span>더보기</span>
+      </a>
+      <a href="search.html" class="search">
+        <img src="assets/icons/search-onclick.png" alt="검색 버튼-onclick" />
+        <span>검색</span>
+      </a>
+      <a href="home.html" class="home">
+        <img src="assets/icons/house.png" alt="홈 버튼-onclick" />
+        <span>홈</span>
+      </a>
+      <a href="#" class="save">
+        <img src="assets/icons/bookmark-white.png" alt="북마크 버튼" />
+        <span>저장</span>
+      </a>
+      <a href="#" class="user">
+        <img src="assets/icons/user.png" alt="사용자 버튼" />
+        <span>내 정보</span>
+      </a>
+    </nav>
+  </body>
+</html>
