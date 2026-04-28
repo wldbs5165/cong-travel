@@ -3,6 +3,9 @@ import { cardData } from "./../data/card.js";
 // 카드 들어갈 영역 불러옴
 const cardContainer = document.querySelector(".card-container");
 
+// 현재 페이지 확인
+const isBookmarkPage = window.location.pathname.includes("bookmark.html");
+
 // -----카드 출력-----
 function renderCards() {
   cardContainer.innerHTML = cardData
@@ -28,17 +31,21 @@ function renderCards() {
                 <div class="card-actions">
                   <button class="save-btn">
                     <img
-                      src="assets/icons/bookmark.png"
+                      src="${
+                        isBookmarkPage
+                          ? "assets/icons/bookmark-black-onclick.png"
+                          : "assets/icons/bookmark.png"
+                      }"
                       alt="저장하기 아이콘"
                     />
-                    <span class="caption">저장하기</span>
+                    <span class="caption"> ${isBookmarkPage ? "" : "저장하기"}</span>
                   </button>
                   <a href="#" class="share-btn">
                     <img
                       src="assets/icons/external-link.png"
                       alt="공유하기 아이콘"
                     />
-                    <span class="caption">공유하기</span>
+                    <span class="caption">${isBookmarkPage ? "" : "공유하기"}</span>
                   </a>
                 </div>
               </div>`,
