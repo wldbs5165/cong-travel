@@ -119,4 +119,18 @@ function enableSlider(container) {
   });
 
   viewport.addEventListener("touchend", snap);
+
+  container.addEventListener("click", (e) => {
+    if (moved) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  });
 }
+
+document.addEventListener("click", function (e) {
+  if (e.target.closest(".save-btn, .share-btn")) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+});
