@@ -54,3 +54,13 @@ function renderCards() {
 }
 
 renderCards();
+
+document.addEventListener("click", function (e) {
+  if (e.target.closest(".save-btn, .share-btn")) return;
+
+  const card = e.target.closest(".card");
+
+  if (card) {
+    this.location.href = "detail.html";
+  }
+});
